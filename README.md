@@ -12,13 +12,13 @@ This repository is broken into two core projects covering the two halves of the 
 1. **Predictive Modeling:** *How much will we sell?* A full forecasting pipeline, from raw data to a machine learning model that produces probabilistic forecasts you can set safety stock against.
 2. **Causal Inference:** *If we change something (or an event occurs), how much does demand move because of that specific factor?* Using SNAP food-assistance days as a natural experiment to triangulate causal effects.
 
-## 📊 Dataset
+##  Dataset
 **[M5 Forecasting – Accuracy (Kaggle)](https://www.kaggle.com/competitions/m5-forecasting-accuracy)**
 * **Scope:** 5.5 years of daily sales (Jan 29, 2011 – Jun 19, 2016).
 * **Scale:** 42,840 hierarchical daily time series across 3 US states (CA, TX, WI), 10 stores, 3 categories (Foods, Hobbies, Household), and 3,049 products.
 * *Note: The deep modeling pipeline in this repository was run specifically on the `CA_1` store.*
 
-## 📂 Repository Structure
+##  Repository Structure
 
 ### Project 1: Demand Forecasting
 * **`01_P1_data_prep.ipynb` - Data Preparation & Cleansing**
@@ -47,7 +47,7 @@ This repository is broken into two core projects covering the two halves of the 
     2. **Difference-in-Differences (DiD):** Measuring the `FOODS` effect net of calendar shocks.
     3. **Propensity-Score / Inverse Probability Weighting (IPW):** Quantifying confounding bias.
 
-## 🚀 Key Results
+##  Key Results
 
 ### 1. Forecasting Accuracy (RMSSE - lower is better, <1 beats seasonal-naive)
 * **LightGBM:** `0.595` (Winner)
@@ -64,7 +64,7 @@ This repository is broken into two core projects covering the two halves of the 
 * **Propensity Score (IPW):** `+14.8%` 
 * *Takeaway:* The naive method overstates the lift due to confounding variables. Planning inventory purely on the naive estimate leads to overstocking.
 
-## 🛠️ Tools & Libraries
+##  Tools & Libraries
 * **Python:** `pandas`, `numpy`, `scikit-learn`, `statsmodels`, `scipy`
 * **Modeling:** `LightGBM`, `XGBoost`
 * **Causal Inference:** Difference-in-Differences, Inverse Probability Weighting (IPW)
