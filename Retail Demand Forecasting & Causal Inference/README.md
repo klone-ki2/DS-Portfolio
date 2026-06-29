@@ -1,4 +1,4 @@
-# 1. Retail Demand Forecasting & Causal Inference
+#  Retail Demand Forecasting & Causal Inference
 
 ##  Overview
 Every inventory decision a retailer makes is a bet on the future. Order too much, and you tie up cash and risk spoilage; order too little, and you miss sales and lose customer trust. The goal of this project is to make that bet less of a gamble using the **Walmart M5 retail dataset**. 
